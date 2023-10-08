@@ -10,8 +10,10 @@ routesBackend.get('/get', cors(Xmark), getAllBackend)
 routesBackend.post('/post', cors(Xmark), postBackend)
 routesBackend.options('/put', cors(Ymark))
 routesBackend.options('/delete', cors(Ymark))
-routesBackend.put('/put', cors(Ymark), putBackend)
-routesBackend.delete('/delete', cors(Ymark), deleteBackend)
+routesBackend.get('/gety', cors(Xmark), getAllBackend)
+routesBackend.post('/posty', cors(Xmark), postBackend)
+routesBackend.put('/puty', cors(Ymark), putBackend)
+routesBackend.delete('/deletey', cors(Ymark), deleteBackend)
 
 
 module.exports = routesBackend
