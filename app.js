@@ -7,7 +7,7 @@ const app = express()
 
 applyMiddleware(app);
 
-app.use('/', routesBackend)
+app.use('/user', routesBackend)
 
 const requestIdMiddleware = (req, res, next) => {
     if (req.headers['x-request-id']) {
