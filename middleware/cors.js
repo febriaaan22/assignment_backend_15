@@ -1,9 +1,9 @@
 const Xmark = {
-        origin: ['http://localhost:5173', 'https://assignment-week-15-fe-x.netlify.app'],
+        origin: ['*', 'https://assignment-week-15-fe-x.netlify.app'],
         methods: ['GET', 'POST']
 }
 const Ymark = {
-        origin: ['https://assignment-week-15-fe-y.netlify.app','http://localhost:5173'],
+        origin: ['https://assignment-week-15-fe-y.netlify.app','*'],
         methods: ['GET', 'POST', 'PUT', 'DELETE']
 }
 
