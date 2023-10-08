@@ -1,5 +1,5 @@
 const express = require('express')
-const routesBackend = require('../Backend/routes/routesBackend')
+const routesBackend = require('../Backend/routes/routesBackend.js')
 const applyMiddleware = require('./middleware');
 
 const app = express()
