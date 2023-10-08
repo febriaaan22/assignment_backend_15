@@ -1,12 +1,12 @@
 const express = require('express')
-const routesBackend = require('../Backend/routes/routesBackend.js')
+// const routesBackend = require('../Backend/routes/routesBackend.js')
 const applyMiddleware = require('./middleware');
 
 const app = express()
 
 applyMiddleware(app);
 
-app.use(routesBackend)
+// app.use(routesBackend)
 
 const requestIdMiddleware = (req, res, next) => {
     if (req.headers['x-request-id']) {
