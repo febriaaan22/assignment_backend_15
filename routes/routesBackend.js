@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { getAllBackend, postBackend, putBackend, deleteBackend } = require('../../Backend/controller/controllerBackend')
+const { getAllBackend, postBackend, putBackend, deleteBackend } = require('../controller/controllerBackend')
 // const { Xmark, Ymark } = require('../middleware/cors')
 const cors = require('cors')
 
