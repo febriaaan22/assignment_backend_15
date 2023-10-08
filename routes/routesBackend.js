@@ -8,6 +8,8 @@ const routesBackend = Router()
 
 routesBackend.get('/get', cors(Xmark), getAllBackend)
 routesBackend.post('/post', cors(Xmark), postBackend)
+routesBackend.put('/put', cors(Xmark), putBackend)
+routesBackend.delete('/delete', cors(Xmark), deleteBackend)
 
 routesBackend.get('/gety', cors(Ymark), getAllBackend)
 routesBackend.post('/posty', cors(Ymark), postBackend)
