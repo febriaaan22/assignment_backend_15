@@ -1,13 +1,31 @@
 const express = require('express')
-const routesBackend = require('./routes/routesBackend')
+const routesBackendX = require('./routes/routesBackend_X')
+const routesBackendY = require('./routes/routesBackend_Y')
 const applyMiddleware = require('./middleware');
-
+const cors = require('cors')
 
 const app = express()
 
 applyMiddleware(app);
 
-app.use('/user', routesBackend)
+app.use('/user', routesBackendX)
+app.use('/usery', routesBackendY)
+
+const whitelist = ['http://localhost:5000', 'http://localhost:7000']
+const corsOptionsDelegate =  function (req, callback) {
+    var corsOptions;
+    if (whitelist.indexOf(req.header('Origin')) !== -1) {
+    corsOptions = { origin: true }
+    } else {
+    corsOptions = { origin: false }
+    }
+    callback(null, corsOptions)
+}
+
+
+// app.use('/user', routesBackendX)
+// app.use('/usery', routesBackendY)
+// // app.use(cors())
 
 const requestIdMiddleware = (req, res, next) => {
     if (req.headers['x-request-id']) {

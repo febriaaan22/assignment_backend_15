@@ -1,10 +1,8 @@
-const Xmark = {
-        origin: ['https://assignment-week-15-fe-x.netlify.app'],
+exports.Xmark = {
+        origin: ['http://localhost:5000'],
         methods: ['GET', 'POST']
 }
-const Ymark = {
-        origin: ['https://assignment-week-15-fe-y.netlify.app'],
-        methods: ['GET', 'POST', 'PUT', 'DELETE']
+exports.Ymark = {
+        origin: ['http://localhost:7000'],
+        methods: ['PUT', 'DELETE', 'GET', 'POST']
 }
-
-module.exports = { Xmark, Ymark }
