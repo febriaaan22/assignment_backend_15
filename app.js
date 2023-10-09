@@ -11,7 +11,7 @@ applyMiddleware(app);
 app.use('/user', routesBackendX)
 app.use('/usery', routesBackendY)
 
-const whitelist = ['http://localhost:5000', 'http://localhost:7000']
+const whitelist = ['https://assignment-week-15-fe-x.netlify.app/', 'https://assignment-week-15-fe-y.netlify.app/']
 const corsOptionsDelegate =  function (req, callback) {
     var corsOptions;
     if (whitelist.indexOf(req.header('Origin')) !== -1) {
