@@ -11,7 +11,7 @@ applyMiddleware(app);
 app.use('/user', routesBackendX)
 app.use('/usery', routesBackendY)
 
-const whitelist = ['https://assignment-week-15-fe-x.netlify.app', 'https://assignment-week-15-fe-y.netlify.app']
+const whitelist = ['https://assignment-backend-15-vj8i.vercel.app/', 'https://assignment-frontend-15.vercel.app/']
 const corsOptionsDelegate =  function (req, callback) {
     var corsOptions;
     if (whitelist.indexOf(req.header('Origin')) !== -1) {
